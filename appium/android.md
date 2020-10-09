@@ -84,17 +84,26 @@
 - **1.1  Get list devices are on**
   - Open terminal and type command: adb devices
 
-- **1.2	Get list name of emulator
+- **1.2	Get list name of emulator**
   - Open terminal and type command: emulator -list-avds
 
-- **1.3	Get all app packages
+- **1.3	Get all app packages**
   - Open terminal and type command: adb shell pm list packages –f
 
-- **1.4	Get appPackage and appActivity of current focus
+- **1.4	Get appPackage and appActivity of current focus**
   - Open terminal and type command:  adb shell dumpsys window | find "mCurrentFocus"
   - Open emulator from command line
   - Open terminal and cd to emulator path
   - Cd C:\Users\Dell\AppData\Local\Android\Sdk\emulator
   - Type emulator -avd “VieOn_Android_TV_API_28” [Name emulator get from 1.2]
+  
+  
+  
+# Referent: 
+  - https://support.testsigma.com/support/solutions/articles/32000019977-how-to-find-app-package-and-app-activity-of-your-android-app
+  - https://www.toolsqa.com/mobile-automation/appium/appium-tutorial/
+  - https://www.youtube.com/watch?v=MSp_pf4EgSg&ab_channel=SoftwareTestingMentor
+
+
 
 
