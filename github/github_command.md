@@ -55,6 +55,7 @@
     >>> git merge [branch need to merge ]
     >>> https://sourcegear.com/diffmerge/  [Tool check conflict]
     >>> git mergetool  <Show tool to merge>
+    >>>    
     >>> 
     >>> 
     '''
