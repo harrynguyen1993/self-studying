@@ -20,12 +20,104 @@ The output of the analysis stage is a set of requirements. If we were to complet
 # 2. Creating Python classes
   ```
   class People:
-    pass
+    #pass
+    def reset(self):
+        self.name = ""
  ```
   - Adding attributes to a class.
     ```
-    >>> person = People()
-    >>> person.name = "Harry"
+    >>> harry = People()
+    >>> harry.name = "Harry"
+    >>> print f("Hello, My name is {harry.name}") # Hello, My name is Harry
+    >>> harry.reset()
+    >>> print(harry.name) # Name is ""
     ```
-  
+  - Contructor: Initializing the object
+     ```
+    class People:
+      def __init__(self, name , address):
+        '''Initialize the position of a new point. The x and ycoordinates can be specified. If they are not, the point defaults to the origin.'''
+          self.name = name 
+          self.address = address
+      def reset(self):
+          self.name = ""
+     ```
+# 3. Modules and packages
+   
+     ```
+     import database
+     db = database.Database()
+      ----------
+      from database import Database
+      from database import *
+
+      ```
+    
+# 4. When Objects Are Alike
+     - Basic inheritance
+     - Inheriting from built-ins
+     - Multiple inheritance
+     - Polymorphism and duck typing
+  - Extending built-ins 
+      ```
+     dclass ContactList(list):
+         def search(self, name):
+            '''Return all contacts that contain the search value
+            in their name.'''
+            matching_contacts = []
+            for contact in self:
+                if name in contact.name:
+                    matching_contacts.append(contact)
+            return matching_contacts
+    class Contact:
+        all_contacts = ContactList()
+
+        def __init__(self, name, email):
+            self.name = name
+            self.email = email
+            self.all_contacts.append(self)
+      ```
+    - Overriding and super
+      ```
+      class Friend(Contact):
+          def __init__(self, name, email, phone):
+          super().__init__(name, email)
+          self.phone = phone
+      ```
+  - Multiple inheritance and The diamond problem
+     ```
+          class Friend(Contact, AddressHolder):
+             def __init__(
+               self, name, email, phone,street, city, state, code):
+               Contact.__init__(self, name, email)
+               AddressHolder.__init__(self, street, city, state, code)
+               self.phone = phone
+          
+          #  Here is the same code written using super
+          class BaseClass:
+              num_base_calls = 0
+              def call_me(self):
+                  print("Calling method on Base Class")
+                  self.num_base_calls += 1
+          class LeftSubclass(BaseClass):
+              num_left_calls = 0
+              def call_me(self):
+                  super().call_me(self)
+                  print("Calling method on Left Subclass")
+                  self.num_left_calls += 1
+          class RightSubclass(BaseClass):
+              num_right_calls = 0
+              def call_me(self):
+                  super().call_me(self)
+                  print("Calling method on Right Subclass")
+                  self.num_right_calls += 1
+
+          class Subclass(LeftSubclass, RightSubclass):
+              num_sub_calls = 0
+              def call_me(self):
+                  LeftSubclass.call_me(self)
+                  RightSubclass.call_me(self)
+                  print("Calling method on Subclass")
+                  self.num_sub_calls += 1
+     ```
     
