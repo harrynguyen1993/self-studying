@@ -121,3 +121,27 @@ The output of the analysis stage is a set of requirements. If we were to complet
                   self.num_sub_calls += 1
      ```
     
+# 4. Expecting the Unexpected
+
+  ```
+    try:
+      no_return()
+    except:
+       raise Exception(''Error exception)
+       print("I caught an exception")
+      print("executed after the exception")
+  ```
+  
+   ```
+   def funny_division2(anumber):
+     try:
+       if anumber == 13:
+          raise ValueError("13 is an unlucky number")
+       return 100 / anumber
+     except (ZeroDivisionError, TypeError):
+        return "Enter a number other than zero"
+        
+        
+    for val in (0, "hello", 50.0, 13):
+         print("Testing {}:".format(va
+   ```
