@@ -84,7 +84,6 @@ class Notebook:
         string.'''
         return [note for note in self.notes if note.match(filter)]
 
-
 class ContactList(list):
      def search(self, name):
         '''Return all contacts that contain the search value
