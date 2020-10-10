@@ -55,8 +55,31 @@
     >>> git merge [branch need to merge ]
     >>> https://sourcegear.com/diffmerge/  [Tool check conflict]
     >>> git mergetool  <Show tool to merge>
-    >>>    
-    >>> 
-    >>> 
-    >>> 
+    >>> git branch
+    >>> git branch -v
+    >>> git branch -merged  [check lists branch is merged to current branch]
+    >>>
     '''
+## Git rebase 
+    '''
+    >>> git rebase --onto master server client
+
+    '''
+
+
+## git server local :   https://bonobogitserver.com/
+
+## git stash 
+    ```
+    >>> git stash 
+    >>> git stash apply -index
+    >>> git stash save 
+    >>> git stash list
+    >>> git stash appy   [stash]
+    >>>>> -  Remove
+    >>> git stash  drop [stash]
+    >>> git stash pop
+    >>> git stash -all
+    >>> git clean -f -d
+
+    ```
