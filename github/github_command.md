@@ -83,3 +83,12 @@
     >>> git clean -f -d
 
     ```
+
+# reverse merge or rebase
+    ```
+    >>> git merge --abort
+    >>> git rebase --abort
+    >>> git diff ... ....
+    >>> git revert HEAD
+    >>> git reset --hard Head
+    ```
