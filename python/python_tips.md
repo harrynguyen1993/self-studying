@@ -1,23 +1,29 @@
-# note-tap : https://pandao.github.io/editor.md/en.html, Editer
-------------------------
-# GitHub Command
-- 
+# Keyword Tip python
 
-  git log --oneline
-  
-  
-------------------------
-  
-# Vim / Vi and Quit the Editor
-  - Open a File in Vim / Vi 
-    - vim file.text
-  
-  - Save a File in Vim / Vi
-    - Pressing Esc
-    - Type :w and hit Enter
-  - Save a File and Quit Vim / Vi
-    - Pressing Esc
-    - Type :wq and hit Enter
-  - Quit Vim / Vi without Saving the File
-    - Pressing Esc
-    - Type :q! and hit Enter
+ - Enumerate
+  ```
+      import sys
+      filename = sys.argv[1]
+      with open(filename) as file:
+          for index, line in enumerate(file):
+          print("{0}: {1}".format(index+1, line), end='')
+  ```
+  - Swap params
+  ```
+    a,b = 10,11
+    a,b =b,a
+  ```
+
+   - For one line params
+  ```
+    evens = [x for x in range(10) if x%2==0
+    print(evens)
+  ```
+
+ ```
+    list.map(function(), list_data)
+    list.filter(function(), list_data)
+    list.reduce(function(), list_data)
+    list.map(lambda x: x*2, list_data)
+    zip(list_a,list_b)
+ ```
