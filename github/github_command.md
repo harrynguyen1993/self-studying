@@ -99,7 +99,8 @@
 
 # Collect to one line
     - git rebase -i HEAD~~
-    - Change pick to squart
+    - Change pick to squash
     - Update title  
     - git rebase -i HEAD~3
     - git push -f origin feature_top_page
+    - change to r update message
