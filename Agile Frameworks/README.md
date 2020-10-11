@@ -1,4 +1,7 @@
 # What are Agile Frameworks?
+
+  - https://itviec.com/blog/agile-la-gi-scrum-la-gi/#:~:text=Burndown%20Chart,%C3%A1n%20(Project%20Burndown%20Chart).
+  - https://www.visual-paradigm.com/scrum/from-small-teams-to-scaling-agile/
 ------------------------
   ```
   - Agile is a flexible way to manage projects. It’s a set of values and principles designed to handle projects with changing requirements, and deliver value both early and frequently in a project's timeline.
@@ -53,4 +56,3 @@
   ```
 
 
-  ### https://itviec.com/blog/agile-la-gi-scrum-la-gi/#:~:text=Burndown%20Chart,%C3%A1n%20(Project%20Burndown%20Chart).
