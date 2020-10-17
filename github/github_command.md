@@ -2,7 +2,7 @@
 
 
 
-![Git flow](asda) 
+![Git flow](https://github.com/harrynguyen1993/note/blob/main/github/GitFlow.PNG) 
    
 
 ## Creat file ignore
