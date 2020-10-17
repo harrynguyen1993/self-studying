@@ -1,5 +1,10 @@
 #  GitHub command
 
+
+
+![Git flow](asda) 
+   
+
 ## Creat file ignore
     ```
     >>> git init
