@@ -10,4 +10,4 @@
     - When the documentation of the test is poor, and we have a short time for execution, in such cases, this exploratory testing requires analytical skills and creativity of the tester and also the tester’s product knowledge
 ### How to perform manual testing?
 
-     ![perform manual](https://github.com/harrynguyen1993/note/blob/main/images/Manual%20teting.PNG) 
+![perform manual](https://github.com/harrynguyen1993/note/blob/main/images/Manual%20teting.PNG) 
