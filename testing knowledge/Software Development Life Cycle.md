@@ -17,7 +17,7 @@
     -  Improved client relations
  ```
 
- ![SDLC](image) 
+ ![SDLC](https://github.com/harrynguyen1993/note/blob/main/images/sdlc.PNG) 
 
 ### Requirements Collections and Analysis
 ```
