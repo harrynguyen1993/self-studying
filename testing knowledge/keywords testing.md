@@ -28,4 +28,4 @@
   - Use Case Testing
 
 # Defect Life Cycle
-![Defect Life Cycle](https://github.com/harrynguyen1993/note/blob/main/images/Manual%20teting.PNG) 
+![Defect Life Cycle](https://github.com/harrynguyen1993/note/blob/main/images/Defect-life_cycle.PNG) 
