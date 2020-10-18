@@ -11,3 +11,21 @@
 ### How to perform manual testing?
 
 ![perform manual](https://github.com/harrynguyen1993/note/blob/main/images/Manual%20teting.PNG) 
+
+
+
+# Techniques of Dynamic Testing
+
+- Experienced Based
+  - Error Guessing
+  - Exploratory Testing
+- Specification Based
+  - Boundary Value Analysis
+  - Equivalence Partitioning
+  - Decision Table Testing
+  - Orthogonal Array Testing
+  - State Transition Diagrams
+  - Use Case Testing
+
+# Defect Life Cycle
+![Defect Life Cycle](https://github.com/harrynguyen1993/note/blob/main/images/Manual%20teting.PNG) 
