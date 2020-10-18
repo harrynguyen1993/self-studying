@@ -70,16 +70,18 @@
 
 ------------------------
 ## Run and launch appication
-- **Capability to launch an application**
- - {
-   - "platformName": "Android",
-   - "platformVersion": "9.0",
-   - "deviceName": "Android_TV_API_28",
-   - "appActivity": "com.my.app.MainActivity",
-   - "automationName": "UiAutomator2",
-   - "app": "C:\\floware\\....Test_3.7.0_2008251655.apk",
-   - "appPackage": "com.vn.tv"
- - }
+- Capability to launch an application
+ ```
+  {
+      "platformName": "Android",
+    "platformVersion": "9.0",
+    "deviceName": "Android_TV_API_28",
+    "appActivity": "com.my.app.MainActivity",
+    "automationName": "UiAutomator2",
+    "app": "C:\\floware\\....Test_3.7.0_2008251655.apk",
+    "appPackage": "com.vn.tv"
+  }
+ ```
 
 - **1.1  Get list devices are on**
   - Open terminal and type command: adb devices
@@ -95,7 +97,7 @@
   - Open emulator from command line
   - Open terminal and cd to emulator path
   - Cd C:\Users\Dell\AppData\Local\Android\Sdk\emulator
-  - Type emulator -avd “VieOn_Android_TV_API_28” [Name emulator get from 1.2]
+  - Type emulator -avd “_Android_TV_API_28” [Name emulator get from 1.2]
   
   
   
