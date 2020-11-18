@@ -1,0 +1,15 @@
+#Data Science and Data Analysis
+
+
+## The following concepts are associated with big data:
+```
+- volume:
+  the sheer amount of data, whether it will be giga-, tera-, peta- or exabytes
+- velocity:
+  the speed of arrival and processing of data
+- veracity:
+  uncertainty or imprecision of data
+- variety:
+  the many sources and types of data both structured and unstructured
+```
+## NumPy, SciPy, Matplotlib and Pandas
