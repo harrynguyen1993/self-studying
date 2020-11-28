@@ -143,5 +143,40 @@ def check_performance_code():
     cProfile.run("[(a, b) for a in (1, 3, 5) for b in (2, 4, 6)]")
 
 
+def read_file(path: str = None):
+    with open(path, 'r') as reader:
+        temp = {}
+        empty = []
+        tep = ""
+        for line in reader.readlines():
+            line = line.replace("\n", "")
+            if "Matrix" in line:
+                temp[line] = []
+                tep = line
+                empty = []
+            else:
+                empty.append(line.split(" "))
+                temp[tep] = empty
+    return temp
+
+
+def create_new_thread(dict_data: dict = None):
+    key = dict_data.keys()
+    matrix_a, matrix_b = [dict_data.get(matrix) for matrix in key]
+    # iterate through rows of X
+    result = [[0, 0],
+              [0, 0]]
+    for i in range(len(matrix_a)):
+        # iterate through columns of Y
+        for j in range(len(matrix_b[0])):
+            # iterate through rows of Y
+            for k in range(len(matrix_b)):
+                result[i][j] += int(matrix_a[i][k]) * int(matrix_b[k][j])
+
+    return result
+
+
 if __name__ == '__main__':
-    print("Hello ")
+    path = r"C:\Users\Dell\Desktop\file.txt"
+    read_file(path)
+    print(create_new_thread(read_file(path)))
