@@ -109,3 +109,24 @@
 
 https://stackoverflow.com/questions/56784894/macos-catalina-10-15beta-why-is-bash-profile-not-sourced-by-my-shell
 
+
+
+# Appium in Mac: Set ANDROID_HOME, JAVA_HOME: Macos BIG SUR
+
+vim ~/.zprofile
+===> Save 
+export ANDROID_HOME="/Users/luannguyen/Library/Android/sdk"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home"
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools 
+
+->>>>
+
+ - This error comes when you need to configuration
+
+ - Open appium -> click on the "Edit configuration"
+ - and add the android_home and java_home values
+ - now you're good to go
