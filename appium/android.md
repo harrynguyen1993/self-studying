@@ -107,5 +107,5 @@
   - https://www.youtube.com/watch?v=MSp_pf4EgSg&ab_channel=SoftwareTestingMentor
 
 
-
+https://stackoverflow.com/questions/56784894/macos-catalina-10-15beta-why-is-bash-profile-not-sourced-by-my-shell
 
